@@ -110,6 +110,9 @@ elif mode == "display":
 
     # start the webcam feed
     cap = cv2.VideoCapture(0)
+    cap.set(3,640)
+    cap.set(4,480)
+
     while True:
         # Find haar cascade to draw bounding box around face
         ret, frame = cap.read()
@@ -127,7 +130,7 @@ elif mode == "display":
             maxindex = int(np.argmax(prediction))
             cv2.putText(frame, emotion_dict[maxindex], (x+20, y-60), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
 
-        cv2.imshow('Video', cv2.resize(frame,(1600,960),interpolation = cv2.INTER_CUBIC))
+        cv2.imshow('Video', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
