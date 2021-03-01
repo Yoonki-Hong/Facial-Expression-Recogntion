@@ -1,4 +1,4 @@
-# Origin: https://github.com/atulapra/Emotion-detection
+# Original Repo: https://github.com/atulapra/Emotion-detection
 
 # Real-Time Facial Emotion Recognition
 
@@ -17,9 +17,9 @@
 * tensorflow 2.1.3
 * numpy 1.17.4
 * opencv-python 4.1.2.30
+```
 * To install the required packages, run `pip install -r requirements.txt`.
 * If there is an error message with `could not load dynamic library 'libnvinfer.so.6'~`, try:
-```
 
 ```bash
 pip install tensorflow-cpu==2.1.0
