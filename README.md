@@ -18,6 +18,8 @@
 * numpy 1.17.4
 * opencv-python 4.1.2.30
 ```
+## Install
+
 * To install the required packages, run `pip install -r requirements.txt`.
 * If there is an error message with `could not load dynamic library 'libnvinfer.so.6'~`, try:
 
