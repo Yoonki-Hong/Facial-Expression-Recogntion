@@ -9,6 +9,7 @@
 
 ## Environment / Dependencies
 
+```bash
 * Ubuntu 18.04
 * CUDA 10.1
 * cuDNN 7.6.5
@@ -18,6 +19,7 @@
 * opencv-python 4.1.2.30
 * To install the required packages, run `pip install -r requirements.txt`.
 * If there is an error message with `could not load dynamic library 'libnvinfer.so.6'~`, try:
+```
 
 ```bash
 pip install tensorflow-cpu==2.1.0
